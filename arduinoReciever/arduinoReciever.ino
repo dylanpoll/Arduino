@@ -4,6 +4,8 @@
 //https://github.com/dylanpoll/DiscordBots/tree/master/ESPbot
 // I used the FastLED libraries demo-reel as a foundation for this, please check out the fastLED github!!
 //https://github.com/FastLED/FastLED/wiki/Overview
+//a additional note... you can set up entire color profiles and unique events, such as having incomming users add to the lights
+//you can also use pre-packaged color profiles from the fastLED libraries example code.
   
   #include <FastLED.h>
   FASTLED_USING_NAMESPACE
