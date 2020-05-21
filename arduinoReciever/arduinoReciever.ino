@@ -46,7 +46,7 @@ void loop(){
                     leds[i] = CRGB::Green; 
                   break;
                 case'p':
-                    leds[i] = 0xdd8bff;
+                    leds[i] = 0xdd8bff; //purple
                   break;
                 case'b': 
                     leds[i] = CRGB::Blue;
