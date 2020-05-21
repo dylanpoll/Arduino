@@ -13,11 +13,11 @@
   const int GPIO_PIN_NUMBER_15 = 15;
 
 void setup() {
-    Serial.begin(115200);               //this is the native speed for a esp32S
-    pinMode(RelayPin, OUTPUT);          //relay is a output pin. 
-    digitalWrite(RelayPin, LOW);        //starts with relay off
+    Serial.begin(115200);                     //this is the native speed for a esp32S
+    pinMode(RelayPin, OUTPUT);                //relay is a output pin. 
+    digitalWrite(RelayPin, LOW);              //starts with relay off
     
-    WiFi.begin(WIFI_NAME, WIFI_PASSWORD); //connects to wifi
+    WiFi.begin(WIFI_NAME, WIFI_PASSWORD);     //connects to wifi
     
     while (WiFi.status() != WL_CONNECTED) {   //while it is not connected
         delay(1000);
@@ -25,7 +25,7 @@ void setup() {
       }
     Serial.println("");
     Serial.println("IP address: ");         
-    Serial.println(WiFi.localIP());       //your devices subnet IP, use this to connect to it.... so to make it red it would be ("localIP"?color=r)... just viewing the page should turn it red.
+    Serial.println(WiFi.localIP());           //your devices subnet IP, use this to connect to it.... so to make it red it would be ("localIP"?color=r)... just viewing the page should turn it red.
     server.begin();
   }//end setup
   
@@ -98,9 +98,7 @@ void loop(){
                       }
           }
         }
-        // Clear the header variable
-        header = "";
-        // Close the connection
-        client.stop();
+        header = "";    // Clear the header variable
+        client.stop();  // Close the connection
       }
     }//end loop
